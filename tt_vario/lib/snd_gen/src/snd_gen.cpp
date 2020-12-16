@@ -1,6 +1,6 @@
 /**
  * @file wave_ten.cpp
- * @author vabarcaf (viabfer@gmail.com)
+ * @author vabarca (viabfer@gmail.com)
  * @brief Generates signal given specific frequency
  * @version 0.1
  * @date 2020-09-28
@@ -14,7 +14,7 @@
 #include <Arduino.h>
 #include <avr/pgmspace.h>
 
-#include "wave_gen.h"
+#include "snd_gen.h"
 
 /* Defines ---------------------------------------------------------------------------------------*/
 
@@ -73,7 +73,7 @@ wave_gen_lv_t wave_gen_lv = {0};
 /**
  * @brief Sets up the wave gen functionality
  */
-void wave_gen_setup(void)
+void snd_gen_setup(void)
 {
   /*
 // Calculate the sine table with 32 entries
@@ -155,7 +155,7 @@ void wave_gen_setup(void)
  *
  * @param freq frequency value (0 < freq < MAX_FREQ)
  */
-void wave_gen_set_frequency(double freq)
+void snd_gen_set_frequency(double freq)
 {
 
 }

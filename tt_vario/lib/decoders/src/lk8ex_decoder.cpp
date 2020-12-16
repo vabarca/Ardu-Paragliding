@@ -1,6 +1,6 @@
 /**
  * @file decoder.cpp
- * @author vabarcaf (viabfer@gmail.com)
+ * @author vabarca (viabfer@gmail.com)
  * @brief Decodes LK8EX1 protocol for getting vario info
  * @version 0.1
  * @date 2020-09-28
@@ -13,7 +13,7 @@
 
 #include "lk8ex_decoder.h"
 
-typedef enum vario_sm_e
+typedef enum lk8ex_sm_e
 {
     SM_START = 0,
     SM_L,
@@ -29,7 +29,7 @@ typedef enum vario_sm_e
     SM_DATA_TEMP,
     SM_DATA_BATT,
     SM_DATA_CRC
-}vario_sm_t;
+}lk8ex_sm_t;
 
 typedef struct data_s
 {
@@ -38,8 +38,8 @@ typedef struct data_s
 
 typedef struct decoder_lv_s
 {
-    vario_sm_t sm;
-    HardwareSerial *ser;
+    lk8ex_sm_t sm;
+    Serial_ *ser;
     data_t data;
 }decoder_lv_t;
 
@@ -58,7 +58,7 @@ decoder_lv_t decoder_lv =
  *
  * @param ser Hardware serial peripheral pointer
  */
-void lk8ex_decoder_setup(HardwareSerial &ser)
+void lk8ex_decoder_setup(Serial_ &ser)
 {
     decoder_lv.ser = &ser;
 }

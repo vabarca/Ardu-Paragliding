@@ -1,6 +1,6 @@
 /**
  * @file wave_gen.h
- * @author vabarcaf (viabfer@gmail.com)
+ * @author vabarca (viabfer@gmail.com)
  * @brief Generates sin/square signal given specific frequency
  * @version 0.1
  * @date 2020-09-28
@@ -15,15 +15,15 @@
 #include <stdlib.h>
 
 /**
- * @brief Sets up the wave gen functionality
+ * @brief Sets up the sound generator functionality
  */
-void wave_gen_setup(void);
+void snd_gen_setup(void);
 
 /**
- * @brief Sets frequency
+ * @brief Sets sound frequency
  *
- * @param freq frequency value (0 < freq < MAX_FREQ)
+ * @param[in] freq frequency value (0 < freq < MAX_FREQ)
  */
-void wave_gen_set_frequency(double freq);
+void snd_gen_set_frequency(double freq);
 
 #endif //__WAVE_GEN_H

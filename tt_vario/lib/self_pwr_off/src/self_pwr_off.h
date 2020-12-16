@@ -1,6 +1,6 @@
 /**
  * @file self_pwr_off.h
- * @author vabarcaf (viabfer@gmail.com)
+ * @author vabarca (viabfer@gmail.com)
  * @brief Self power off functionality. Requires external circuit
  * @version 0.1
  * @date 2020-09-28

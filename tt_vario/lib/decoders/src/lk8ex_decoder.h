@@ -1,7 +1,7 @@
 
 /**
  * @file decoder.h
- * @author vabarcaf (viabfer@gmail.com)
+ * @author vabarca (viabfer@gmail.com)
  * @brief Decodes LK8EX1 protocol for getting vario info
  * @version 0.1
  * @date 2020-09-28
@@ -10,8 +10,8 @@
  *
  */
 
-#ifndef __DECODER_H
-#define __DECODER_H
+#ifndef __LK8EX_DECODER_H
+#define __LK8EX_DECODER_H
 
 #include <stdlib.h>
 
@@ -20,7 +20,7 @@
  *
  * @param ser Hardware serial peripheral pointer
  */
-void lk8ex_decoder_setup(HardwareSerial &ser);
+void lk8ex_decoder_setup(Serial_ &ser);
 
 /**
  * @brief Vario data getter
@@ -37,4 +37,4 @@ int32_t lk8ex_decoder_get_vario(void);
  */
 bool lk8ex_decoder_update(void);
 
-#endif //__DECODER_H
+#endif //__LK8EX_DECODER_H

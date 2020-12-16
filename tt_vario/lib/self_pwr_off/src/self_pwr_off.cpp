@@ -1,6 +1,6 @@
 /**
  * @file self_pwr_off.cpp
- * @author vabarcaf (viabfer@gmail.com)
+ * @author vabarca (viabfer@gmail.com)
  * @brief Self power off functionality. Requires external circuit
  * @version 0.1
  * @date 2020-09-28
@@ -12,7 +12,7 @@
 #include <Arduino.h>
 #include <avr/io.h>
 
-#include "utils.h"
+#include "../../utils/src/utils.h"
 #include "self_pwr_off.h"
 
 typedef struct self_pwr_off_lv_s
